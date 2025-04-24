@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs335n8by2hrf"]
+
+[ext_resource type="Script" uid="uid://u4vh00xjjs8o" path="res://scripts/branch.gd" id="1_mcofe"]
+
+[node name="Branch" type="Line2D"]
+width = 0.0
+script = ExtResource("1_mcofe")

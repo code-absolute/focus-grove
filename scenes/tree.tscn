@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfmp0hkektipc"]
+
+[ext_resource type="Script" uid="uid://dfqlf2v77f2jo" path="res://scripts/tree.gd" id="1_gvmkm"]
+[ext_resource type="Script" uid="uid://b5g8hfy1vbbie" path="res://scripts/junction.gd" id="1_nnvrw"]
+[ext_resource type="Script" uid="uid://b3m37xvcos8rv" path="res://scripts/anchor.gd" id="2_gvmkm"]
+
+[node name="Tree" type="Node2D"]
+script = ExtResource("1_gvmkm")
+
+[node name="AnchorPoint" type="Marker2D" parent="."]
+script = ExtResource("1_nnvrw")
+point_color = Color(0.0413847, 0.832709, 1, 1)
+distance_constraint = 25.0
+
+[node name="Anchor" type="Node2D" parent="AnchorPoint"]
+script = ExtResource("2_gvmkm")
+
+[node name="BasePoint" type="Marker2D" parent="."]
+script = ExtResource("1_nnvrw")
+point_color = Color(0.278735, 0.778994, 0.515797, 1)
